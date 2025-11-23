@@ -11,5 +11,4 @@ layout: home
 
 Welcome to **StreamSearch** — a real-time, distributed search platform for event-driven and AI-ready systems.
 
-This site is the home of the StreamSearch project, architecture notes, and technical deep dives into
-streaming search, Lucene, Kafka/Pulsar, and enterprise-grade Go and Java backends.
+<center>Happy search on cloud based systems</center>
