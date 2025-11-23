@@ -1,16 +1,20 @@
 
-title: "Saeed Shahsavan – Software Architect"
+title: "StreamSearch – Real-Time Search & Distributed Intelligence"
 email: "s.shahsavan@gmail.com"
 description: >- # this means to ignore newlines until "baseurl:"
-  Software Architect specializing in distributed systems, search engines,
-  event-driven platforms, and high-performance backend engineering with Go and Java.
-  Designing scalable enterprise systems with clarity and technical rigor.
-url: "https://saeedshahsavan.com" # the base hostname & protocol for your site, e.g. http://example.com
+  StreamSearch is a high-performance, distributed search platform inspired by
+  modern event-driven architectures. Built for enterprises that need real-time
+  indexing, scalable analytics, and AI-ready data flows — powered by Kafka,
+  Pulsar, Lucene, and cloud-native design.
+  
+  Engineering clarity at scale through zero-knowledge search, vector retrieval,
+  and pluggable content pipelines.
+url: "https://streamsearch.org" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-twitter_username: Saeed_Shahsavan
+# twitter_username: Saeed_Shahsavan
 # github_username:  shahsavan
-linkedin_username: saeed-shahsavan
-repository: "shahsavan/saeedshahsavan"
+# linkedin_username: saeed-shahsavan
+# repository: "shahsavan/saeedshahsavan"
 # Build settings
 theme: minima
 plugins:
