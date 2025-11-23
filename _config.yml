@@ -20,3 +20,4 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+logo: /streamsearch-logo.png
