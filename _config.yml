@@ -18,21 +18,23 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: "Saeed Shahsavan"
+email: "s.shahsavan@gmail.com"
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Software Architect specializing in distributed systems, search engines,
+  event-driven platforms, and high-performance backend engineering with Go and Java.
+  Designing scalable enterprise systems with clarity and technical rigor.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://saeedshahsavan.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: Saeed_Shahsavan
+github_username:  shahsavan
+linkedin_username: saeed-shahsavan
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -53,3 +55,55 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# --- Markdown engine ---
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# --- SEO & Metadata ---
+timezone: "Europe/Vienna"
+lang: "en"
+
+# --- Permalinks (clean URLs) ---
+permalink: /:categories/:title/
+
+# --- Build settings ---
+paginate: 10        # Number of posts per page (if using blog)
+paginate_path: "/page:num/"
+
+# --- Collections (extend later if needed) ---
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# --- Defaults (auto apply to pages & posts) ---
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Saeed Shahsavan"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# --- Exclusions (clean build) ---
+exclude:
+  - README.md
+  - node_modules/
+  - vendor/
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - yarn.lock
+  - .sass-cache/
+  - .jekyll-cache/
+
+# --- Include additional directories ---
+include:
+  - ".htaccess"
